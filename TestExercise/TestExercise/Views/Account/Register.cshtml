@@ -1,0 +1,48 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row">
+    <div class="divDesign" id="registerDiv">
+        <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+            <p id="registerHeader">Register</p>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <input placeholder="Email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input placeholder="Password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input placeholder="Confirm password" asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default">Register</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    #registerHeader {
+        font-family: 'Segoe UI Historic';
+        font-size: 22px;
+        color: #616161;
+    }
+
+    #registerDiv{
+        width: 320px;
+        padding: 10px 30px 10px 30px;
+        text-align: center
+    }
+
+
+
+</style>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

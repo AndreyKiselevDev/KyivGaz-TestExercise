@@ -1,0 +1,92 @@
+﻿body {
+    background: #eeeeee;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#table {
+    width: 500px;
+    margin: auto;
+    background: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4)
+}
+
+table > thead > tr > th > img{
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#editButton {
+    height: 22px;
+    padding: 0px 10px 0px 10px;
+}
+
+.center {
+    text-align: center
+}
+
+.modalwindow {
+    width: 400px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+    .modalwindow > button {
+        margin-top: 10px;
+    }
+
+    .modalwindow > p {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .modalwindow > h3 {
+        font-size: 19px;
+    }
+
+    .modalwindow > div {
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        width: 240px;
+    }
+
+        .modalwindow > div > select {
+            float: left;
+            width: 150px;
+        }
+
+        .modalwindow > div > p {
+            float: left;
+            font-size: 16px;
+            margin-top: 5px;
+            margin-right: 7px;
+            margin-left: 10px;
+        }
+
+        .modalwindow > div > textarea {
+            width: 93%;
+            margin-left: 5px;
+            min-height: 70px;
+        }
+
+#loginHeader {
+    font-family: 'Segoe UI Emoji';
+    font-size: 22px;
+    color: #616161;
+}
+
+#loginDiv {
+    text-align: center;
+    padding: 10px 20px 12px 20px;
+    width: 300px;
+}
+
+.divDesign {
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+    background: #fafafa;
+}
